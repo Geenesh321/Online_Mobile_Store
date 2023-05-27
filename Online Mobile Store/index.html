@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Online Mobile Store</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- bootstrap for good looks to webapge -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- library page link for social media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google font page link for font style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- JavaScript -->
+    <script src="./Js/index.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div id="wrapper">
+
+        <header>
+            <div id="header">
+                <img src="./src/logo.png" alt="Realstate image" id="logo">
+                <h1>Online Mobile Store</h1>
+                <div class="login">
+                    <input type="text" placeholder="Username" name="username"><br>
+                    <button><a href="login.html">Log In</a></button>
+                </div>
+            </div>
+
+        </header>
+        <br>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="home">
+                <div id="description">
+                    <img src="./src/home page photo.jpg" alt="Product" style="width:100%" id="slide_img">
+                    &nbsp;&nbsp;&nbsp;
+                    <p>
+                        <!-- <h4 class="image_caption">
+                    </h4> -->
+                    </p>
+                </div>
+                <!--Creating button-->
+                <br>
+                <div id="button">
+                    <button style="box-shadow: 0 0 10px black;border-radius: 5px;
+                    border: 1px solid white;"><a href="product.html">See more Product</a></button>
+                </div>
+            </div>
+            <br>
+        </main>
+        <footer style=" background-color: rgb(35, 118, 151); color: white;">
+            <h4 style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Join-Us get Social</h4><br>
+            <div id="icons">
+                <a href="#" class="fa fa-facebook"></a> &nbsp;&nbsp;
+                <a href="#" class="fa fa-google"></a>&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;
+            </div>
+            <div id="termsCondn">
+                <ul style="display: flex; justify-content: center;margin-bottom: 0px; padding-bottom: 0px;">
+                    <li>About us</li>
+                    <li>Privacy policy</li>
+                    <li> Terms of Use</li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Design by <b>Geenesh Acharya</b>
+                </p>
+                <p style="text-align: center;"> &copy Online Mobile Store 2002-2022</p>
+            </div>
+            <div id="time">
+                
+            </div>
+        </footer>
+    </div>
+</body>
+
+
+</html>

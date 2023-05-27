@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Online Mobile Store</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- bootstrap for good looks to webapge -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- library page link for social media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- JavaScript -->
+    <script src="./Js/index.js"></script>
+</head>
+
+<body onload=startTime()>
+    <div id="wrapper">
+
+        <header>
+            <div id="header">
+                <img src="./src/logo.png" alt="Realstate image" id="logo">
+                <h1>Online Mobile Store</h1>
+                <div class="login">
+                    <input type="text" placeholder="Username" name="username"><br>
+                    <button><a href="login.html">Log In</a></button>
+                </div>
+            </div>
+        </header>
+        <br>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <fieldset>
+                    <legend>
+                        <p>Products</p>
+                    </legend>
+                </fieldset>
+                <div class="row">
+                    <div class="column">
+                        <img src="./src/samsungS22.jpg" alt="Samsung galaxy s22 ultra" style="width:100%"
+                            id="productImg">
+                        <div class="product">
+                            <name>Samsung Galaxy S22 Ultra</name><br>
+                            <price class="price_block">RS 71,564</price>
+                            <button style="box-shadow: 0 0 10px black;" id="1" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay1" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>12GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>1TB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /5000 mAh/ Fast charging 25W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Camera-Resolution</td>
+                                        <td> 108MP+ 12MP + 10MP + 10MP</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/note10.jpg" alt="Samsung galaxy note 10" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Samsung Galaxy Note 10 Plus</name><br>
+                            <price class="price_block">INR 55,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="2" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay2" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>256GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /3500 mAh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Front Camera-Resolution</td>
+                                        <td>10 MP</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/fold3.jpg" alt="Samsung fold 3" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Samsung Galaxy Z Fold 3</name><br>
+                            <price class="price_block">RS 2,19,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="3" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay3" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>12GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>256/512GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /4400 mAh/ Fast charging 25W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Camera-Resolution</td>
+                                        <td>Primary: 12MP, f/1.8, Dual Pixel AF, OISP</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/flip3.jpg" alt="Samsung flip 3" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Samsung Galaxy Flip 3</name><br>
+                            <price class="price_block">RS 84,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="4" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay4" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>256GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /3300 mAh/ Fast charging 25W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Front Camera-Resolution</td>
+                                        <td>10-megapixel (f/2.4, 1.22-micron)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/AsusROGPhone3.jpg" alt="Asus ROG Phone 3" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Asus ROG Phone 3</name><br>
+                            <price class="price_block">INR 57,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="5" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay5" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>128GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /6000 mAh/ Fast charging 25W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Camera-Resolution</td>
+                                        <td>64-megapixel (f/1.8, 1.6-micron) + 13-megapixel (f/2.4) + 5-megapixel
+                                            (f/2.0)</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/iphone13pro.jpg" alt="iphone 13 pro" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Iphone 13 pro</name><br>
+                            <price class="price_block">RS 2,77,990</price>
+                            <button style="box-shadow: 0 0 10px black;" id="6" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay6" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>4/6GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>1TB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Fast charging 20W, 50% in 30 min</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Scratch-resistant ceramic glass, oleophobic coating </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Main Camera-Resolution</td>
+                                        <td>12 MP, f/1.5, 26mm (wide), 1.9µm, dual pixel PDAF</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/redmi note 10 pro.jpg" alt="redmi note 10 pro" style="width:100%"
+                            id="productImg">
+                        <div class="product">
+                            <name>redmi note 10 pro</name><br>
+                            <price class="price_block">RS 29,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="7" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay7" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>6GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>128GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /6000 mAh/ Fast charging 25W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rear Camera-Resolution</td>
+                                        <td>108 MP</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <img src="./src/RedmiM11pro.jpg" alt="Redmi M11 pro" style="width:100%" id="productImg">
+                        <div class="product">
+                            <name>Redmi M11 pro</name><br>
+                            <price class="price_block">RS 88,999</price>
+                            <button style="box-shadow: 0 0 10px black;" id="8" onclick="buttonClick(this)">See
+                                Specs</button>
+                            <button style="box-shadow: 0 0 10px black;" id="3"><a href="contactUs.html">Buy
+                                    now</a></button>
+                            <div class="card" id="carddisplay8" style="display:none">
+                                <table class="spec_table">
+                                    <tr>
+                                        <td>RAM Memory</td>
+                                        <td>4/8GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Storage Capacity</td>
+                                        <td>64/128GB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Battery</td>
+                                        <td>Li-Po /5000 mAh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Protection</td>
+                                        <td>Gorilla Glass 5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Front Camera-Resolution</td>
+                                        <td>50MP</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <footer style=" background-color: rgb(35, 118, 151); color: white;">
+            <h4 style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Join-Us get Social</h4><br>
+            <div id="icons">
+                <a href="#" class="fa fa-facebook"></a> &nbsp;&nbsp;
+                <a href="#" class="fa fa-google"></a>&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;
+            </div>
+            <div id="termsCondn">
+                <ul style="display: flex; justify-content: center;margin-bottom: 0px; padding-bottom: 0px;">
+                    <li>About us</li>
+                    <li>Privacy policy</li>
+                    <li> Terms of Use</li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Design by <b>Geenesh Acharya</b>
+                </p>
+                <p style="text-align: center;"> &copy Online Mobile Store 2002-2022</p>
+            </div>
+            <div id="time">
+                
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // for the spec 
+
+        function buttonClick(elemt) {
+            var x = elemt.id;
+
+            if (x == "1") {
+                console.log("1");
+                if (document.getElementById("carddisplay1").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay1").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay1").style.display = "none";
+                }
+            }
+            if (x == "2") {
+                console.log("1");
+                if (document.getElementById("carddisplay2").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay2").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay2").style.display = "none";
+                }
+            }
+            if (x == "3") {
+                console.log("1");
+                if (document.getElementById("carddisplay3").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay3").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay3").style.display = "none";
+                }
+            }
+            if (x == "4") {
+                console.log("1");
+                if (document.getElementById("carddisplay4").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay4").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay4").style.display = "none";
+                }
+            }
+            if (x == "5") {
+                console.log("1");
+                if (document.getElementById("carddisplay5").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay5").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay5").style.display = "none";
+                }
+            }
+            if (x == "6") {
+                console.log("1");
+                if (document.getElementById("carddisplay6").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay6").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay6").style.display = "none";
+                }
+            }
+            if (x == "7") {
+                console.log("1");
+                if (document.getElementById("carddisplay7").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay7").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay7").style.display = "none";
+                }
+            }
+            if (x == "8") {
+                console.log("1");
+                if (document.getElementById("carddisplay8").style.display == "none") {
+                    console.log("11");
+                    document.getElementById("carddisplay8").style.display = "block";
+                }
+                else {
+                    document.getElementById("carddisplay8").style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

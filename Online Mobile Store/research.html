@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Online Mobile Store</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- bootstrap for good looks to webapge -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- library page link for social media buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="./Js/index.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div id="wrapper">
+
+        <header>
+            <div id="header">
+                <img src="./src/logo.png" alt="Realstate image" id="logo">
+                <h1>Online Mobile Store</h1>
+                <div class="login">
+                    <input type="text" placeholder="Username" name="username"><br>
+                    <button><a href="login.html">Log In</a></button>
+                </div>
+            </div>
+        </header>
+        <br>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+
+            <div class="research_block">
+                <img src="./src/slideshow.jpg" id="specsPic">
+                <p id="specsPicPara">The aim is to turn this design into a home page. I appreciate the slideshow
+                    design format, where the picture changes every three seconds. As a result, I created this design
+                    entirely in HTML and JavaScript. This slideshow will help customer to know about different products
+                    which are avilable on this store.</p>
+            </div>
+            <div class="research_block">
+                <img src="./src/specs.jpg" id="specsPic">
+                <p id="specsPicPara">The way to display the specifications of the device shown in this webpage is so
+                    attractive so I like
+                    this way and try to trace it into my webpage using HTML Javascript and to make it more different I
+                    took help of CSS. The conclusion of this way to display specs is to help customer not ot be confuse
+                    by see many phone specs at a time they can just click on the button of the phone they want to view
+                    specs and compare the specs between two or more than two different phones.
+                </p>
+            </div>
+            <div class="research_block">
+                <img src="./src/contactus.jpg" id="specsPic">
+                <p id="specsPicPara">I like the formate of Contact Us page where all the fields are placed in one place
+                    and sumit button
+                    is just at the down so I decide to replicate this formate and make it different using HTML and CSS
+                </p>
+            </div>
+
+
+        </main>
+
+        <footer style=" background-color: rgb(35, 118, 151); color: white;">
+            <h4 style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Join-Us get Social</h4><br>
+            <div id="icons">
+                <a href="#" class="fa fa-facebook"></a> &nbsp;&nbsp;
+                <a href="#" class="fa fa-google"></a>&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>&nbsp;&nbsp;
+            </div>
+            <div id="termsCondn">
+                <ul style="display: flex; justify-content: center;margin-bottom: 0px; padding-bottom: 0px;">
+                    <li>About us</li>
+                    <li>Privacy policy</li>
+                    <li> Terms of Use</li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <p style="text-align: center; margin-bottom: 0px; padding-bottom: 0px;">Design by <b>Geenesh Acharya</b>
+                </p>
+                <p style="text-align: center;"> &copy Online Mobile Store 2002-2022</p>
+            </div>
+            <div id="time">
+                
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
